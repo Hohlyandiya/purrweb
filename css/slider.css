@@ -96,6 +96,7 @@
 .carousel-bullet svg {
   color: transparent;
   stroke: white;
+  cursor: pointer;
 }
 
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,

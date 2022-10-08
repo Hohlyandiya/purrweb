@@ -1,5 +1,21 @@
 @import url("./stylesheet.css");
 
+:root {
+  --orange-light: #FF8B00;
+  --orange: #ff981b;
+  --orange-dark: #e67e00;
+  --white: #ffffff;
+  --black: #000000;
+  --purple: #7050E5;
+  --gray: #878787;
+  --pink: #F101BF;
+  --blue: #0066FF;
+  --gray-dark: #292929;
+  --purple-dark: #5634D1;
+  --gray-light: #999999;
+  --black-light: #252525;
+}
+
 body {
   max-width: 1600px;
   margin: 0 auto;
@@ -39,6 +55,33 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+  position: relative;
+}
+
+.header-menu__item::after {
+  content: '';
+  display: block;
+  background: #FF8B00;
+  height: 3px;
+  opacity: 0;
+  position: absolute;
+  width: -webkit-fill-available;
+  transition: all 0.3s ease;
+}
+
+.header-menu__item:focus::after {
+  background: #e67e00;
+  opacity: 1;
+}
+
+.header-menu__item:hover::after {
+  background: #FF8B00;
+  opacity: 1;
+}
+
+.header-menu__item:active::after {
+  background: #ff981b;
+  opacity: 1;
 }
 
 .header-offer {
