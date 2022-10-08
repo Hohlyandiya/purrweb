@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="header-container">
+        <div class="header-inner">
+          <a href="#">
+            <img class="header-logo" src="./images/logo.png" alt="logo" />
+          </a>
+          <nav class="header-menu">
+            <a href="#" class="header-menu__item">home</a>
+            <a href="#" class="header-menu__item">products</a>
+            <a href="#" class="header-menu__item">services</a>
+            <a href="#" class="header-menu__item">resources</a>
+            <a href="#" class="header-menu__item">about</a>
+            <a href="#" class="header-menu__item">contact us</a>
+          </nav>
+        </div>
+
+        <div class="header-offer">
+          <div class="header-slider">
+            <div class="carousel">
+              <div class="carousel-inner">
+                <input
+                  class="carousel-open"
+                  type="radio"
+                  id="carousel-1"
+                  name="carousel"
+                  aria-hidden="true"
+                  hidden=""
+                  checked="checked"
+                />
+                <div class="carousel-item">
+                  <div class="carousel-item-block">
+                    <h3 class="carousel-item-block__title">
+                      Device Authentication
+                    </h3>
+                    <p class="carousel-item-block__text">
+                      SALT Group is a world leader in authentication and
+                      security. We have a range of services to improve user
+                      authentication. Discover the possibilities with SALT.
+                    </p>
+                    <button class="carousel-item-block__btn">
+                      get started
+                    </button>
+                  </div>
+                  <img src="./images/twitter-pc.svg" alt="twitter-pc" />
+                </div>
+                <input
+                  class="carousel-open"
+                  type="radio"
+                  id="carousel-2"
+                  name="carousel"
+                  aria-hidden="true"
+                  hidden=""
+                />
+                <div class="carousel-item">
+                  <div class="carousel-item-block">
+                    <h3 class="carousel-item-block__title">
+                      Device Authentication2
+                    </h3>
+                    <p class="carousel-item-block__text">
+                      SALT Group is a world leader in authentication and
+                      security. We have a range of services to improve user
+                      authentication. Discover the possibilities with SALT.
+                    </p>
+                    <button class="carousel-item-block__btn">
+                      get started
+                    </button>
+                  </div>
+                  <img src="./images/twitter-pc.svg" alt="twitter-pc" />
+                </div>
+                <input
+                  class="carousel-open"
+                  type="radio"
+                  id="carousel-3"
+                  name="carousel"
+                  aria-hidden="true"
+                  hidden=""
+                />
+                <div class="carousel-item">
+                  <div class="carousel-item-block">
+                    <h3 class="carousel-item-block__title">
+                      Device Authentication3
+                    </h3>
+                    <p class="carousel-item-block__text">
+                      SALT Group is a world leader in authentication and
+                      security. We have a range of services to improve user
+                      authentication. Discover the possibilities with SALT.
+                    </p>
+                    <button class="carousel-item-block__btn">
+                      get started
+                    </button>
+                  </div>
+                  <img src="./images/twitter-pc.svg" alt="twitter-pc" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <label for="carousel-1" class="carousel-bullet active">
+              <svg width="19" height="22" viewBox="0 0 19 22">
+                <path
+                  d="M9.5 0L19 5.5V16.5L9.5 22L0 16.5V5.5L9.5 0Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </label>
+
+            <label for="carousel-2" class="carousel-bullet"
+              ><svg width="19" height="22" viewBox="0 0 19 22">
+                <path
+                  d="M9.5 0L19 5.5V16.5L9.5 22L0 16.5V5.5L9.5 0Z"
+                  fill="currentColor"
+                /></svg></label>
+
+            <label for="carousel-3" class="carousel-bullet"><svg width="19" height="22" viewBox="0 0 19 22">
+                <path
+                  d="M9.5 0L19 5.5V16.5L9.5 22L0 16.5V5.5L9.5 0Z"
+                  fill="currentColor"
+                /></svg></label>
+          </div>
+
+          <div class="header-more">
+            <p class="header-text">find out more</p>
+            <a href="#wedo">
+              <img src="./images/union.svg" alt="union" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="prices">
+      <div class="conatier-prices">
+        <div class="prices-content">
+          <div class="prices-item">
+            <h3 class="prices-title">126,300</h3>
+            <p class="prices-text">
+              Identity Theft Cases Reported in Australia
+            </p>
+          </div>
+          <div class="prices-item">
+            <h3 class="prices-title">$20.1bn</h3>
+            <p class="prices-text">
+              Online Transactions per annum by Australians
+            </p>
+          </div>
+          <div class="prices-item">
+            <h3 class="prices-title">45,511</h3>
+            <p class="prices-text">Online Fraud Cases Reported in Australia</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wedo" id="wedo">
+      <div class="wedo-container">
+        <h3 class="wedo-title">What We Do</h3>
+
+        <div class="wedo-content">
+          <div class="wedo-item">
+            <img
+              class="wedo-item__icon"
+              src="./images/device.png"
+              alt="device"
+            />
+            <div class="wedo-item__content">
+              <h4 class="wedo-item__title">Device Authentication</h4>
+              <p class="wedo-item__text">
+                Hardware-based device fingerprinting resilient to cloning,
+                malware and device jailbreak/root. Hardware-level control over
+                the displayed UI independent of the device operating system.
+                Hardware-level data protection.
+              </p>
+            </div>
+          </div>
+
+          <div class="wedo-item">
+            <img
+              class="wedo-item__icon"
+              src="./images/authentication.png"
+              alt="device"
+            />
+            <div class="wedo-item__content">
+              <h4 class="wedo-item__title">User Authentication</h4>
+              <p class="wedo-item__text">
+                Verify the identity of users for access control with
+                contemporary biometric connected MFA security tokens.
+              </p>
+            </div>
+          </div>
+
+          <div class="wedo-item">
+            <img
+              class="wedo-item__icon"
+              src="./images/tarnsaction.png"
+              alt="device"
+            />
+            <div class="wedo-item__content">
+              <h4 class="wedo-item__title">Transaction Authentication</h4>
+              <p class="wedo-item__text">
+                High assurance out-of-band authentication of high impact
+                transactions and instructions initiated through electronic
+                service delivery channels. Audit trail of verification for
+                non-repudiation. Fraud protection against man-in-the-middle and
+                browser malware.
+              </p>
+            </div>
+          </div>
+
+          <div class="wedo-item">
+            <img
+              class="wedo-item__icon"
+              src="./images/contempopary.png"
+              alt="device"
+            />
+            <div class="wedo-item__content">
+              <h4 class="wedo-item__title">
+                Contemporary authentication methods
+              </h4>
+              <p class="wedo-item__text">
+                Echidna authentication server to enable adaptive risk-based
+                approach to security through a range of methods for different
+                levels of authentication assurance from SMS OTPs,
+                Challenge/Response, to more contemporary QR code signing and
+                advanced connected mobile security tokens capable of transaction
+                signatures with dynamic linking of the transaction context and
+                addition of PIN, Fingerprint and other biometrics.
+              </p>
+            </div>
+          </div>
+
+          <div class="wedo-item">
+            <img class="wedo-item__icon" src="./images/hsm.png" alt="device" />
+            <div class="wedo-item__content">
+              <h4 class="wedo-item__title">HSM Solutions</h4>
+              <p class="wedo-item__text">
+                Reseller of Thales nShield HSMs with professional services and
+                subject matter expertise in HSMs, key ceremony procedures, and
+                SEE code development.
+              </p>
+            </div>
+          </div>
+
+          <div class="wedo-item">
+            <img
+              class="wedo-item__icon"
+              src="./images/cloud.png"
+              alt="device"
+            />
+            <div class="wedo-item__content">
+              <h4 class="wedo-item__title">Cloud & IoT Security</h4>
+              <p class="wedo-item__text">
+                Secure the identity and access of users, devices and Internet of
+                Things connecting into the cloud. Support cloud adoption and
+                migration of applications and data into private and public
+                clouds.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product">
+      <div class="product-container">
+        <div class="product-content">
+          <div class="product-inner">
+            <h3 class="product-title">Product Spotlight</h3>
+            <p class="product-text">
+              Salt mSign Connected Token is a contemporary mobile security 2FA
+              token for authentication of user identity and verification of
+              transactions independent of the delivery channel that initiated
+              the request.
+            </p>
+            <button class="product-btn">MORE INFO</button>
+          </div>
+
+          <div class="product-offer">
+            <video
+              class="product-offer__video"
+              controls
+              preload
+              loop
+              poster="./images/poster.jpg"
+            >
+              <source src="./video/videoplayback.mp4" />
+            </video>
+            <div class="product-offer-block">
+              <img
+                class="product-offer-block__play"
+                src="./images/play.png"
+                alt="play"
+              />
+              <!-- TODO другой текст -->
+              <p class="product-offer-block__text">Feature video</p>
+              <h3 class="product-offer-block__title">mSign Connected token</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="started">
+      <div class="started-container">
+        <div class="started-content">
+          <h5 class="started-title">
+            Ready <br />
+            to get started?
+          </h5>
+
+          <form class="form" action="POST">
+            <h5 class="form__title">Contact us</h5>
+
+            <div class="form__content">
+              <div class="form__fields">
+                <div class="form__item">
+                  <label class="form__label" for="firstName"
+                    >First Name<input
+                      class="form__input"
+                      type="text"
+                      id="firstName"
+                      required
+                      placeholder="First Name"
+                  /></label>
+                </div>
+
+                <div class="form__item">
+                  <label class="form__label" for="lastName"
+                    >lastName<input
+                      class="form__input"
+                      type="text"
+                      required
+                      id="lastName"
+                      placeholder="Last Name"
+                  /></label>
+                </div>
+              </div>
+
+              <label class="form__label" for="email"
+                >Email Address<input
+                  class="form__input"
+                  type="text"
+                  required
+                  id="email"
+                  placeholder="Email Address"
+              /></label>
+
+              <label class="form__label" for="message"
+                >Email Address<textarea
+                  class="form__textarea"
+                  type="text"
+                  id="message"
+                  placeholder="Textarea"
+                ></textarea>
+              </label>
+
+              <button class="form__btn" type="submit">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer">
+      <div class="footer-block-bg">
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="twitter">
+              <div class="twitter-header">
+                <div class="twitter-header__inner">
+                  <img src="./images/twitter-logo.png" alt="twitter logo" />
+                </div>
+                <div class="twitter-header__offer">
+                  <h4 class="twitter__title">@saltgroup</h4>
+                  <p class="twitter__text">Twitter feed</p>
+                </div>
+              </div>
+              <div class="twitter__content">
+                <div class="twitter-item">
+                  <p class="twitter-item__text">
+                    Experience more with expanded Tweets
+                  </p>
+                  <a class="twitter-item__link" href="#"
+                    >http://testing123.com.au</a
+                  >
+                  <span class="twitter-item__span">18 hours ago</span>
+                </div>
+
+                <div class="twitter-item">
+                  <p class="twitter-item__text">
+                    Tailored Trends bring you closer
+                  </p>
+                  <a class="twitter-item__link" href="#"
+                    >http://-testing123.com.au</a
+                  >
+                  <span class="twitter-item__span">12 June 2016</span>
+                </div>
+
+                <div class="twitter-item">
+                  <p class="twitter-item__text">Our new nest.</p>
+                  <a class="twitter-item__link" href="#"
+                    >http://testing123.com.au</a
+                  >
+                  <span class="twitter-item__span">11 June 2016</span>
+                </div>
+              </div>
+            </div>
+
+            <ul class="footer-menu">
+              <li class="footer-menu__item">
+                <div class="footer-menu__header">
+                  <img
+                    class="footer-menu__icon"
+                    src="./images/point.svg"
+                    alt="point"
+                  />
+                  <p class="footer-menu__title">Navigation</p>
+                </div>
+                <div class="footer-menu__links">
+                  <a class="footer-menu__link" href="#">Home</a>
+                  <a class="footer-menu__link" href="#">Products </a>
+                  <a class="footer-menu__link" href="#">Services </a>
+                  <a class="footer-menu__link" href="#">Resources </a>
+                  <a class="footer-menu__link" href="#">About </a>
+                  <a class="footer-menu__link" href="#">CONTACT US</a>
+                </div>
+              </li>
+
+              <li class="footer-menu__item">
+                <div class="footer-menu__header">
+                  <img
+                    class="footer-menu__icon"
+                    src="./images/point.svg"
+                    alt="point"
+                  />
+                  <p class="footer-menu__title">links</p>
+                </div>
+                <div class="footer-menu__links">
+                  <a class="footer-menu__link" href="#">Disclaimer </a>
+                  <a class="footer-menu__link" href="#">Legal </a>
+                  <a class="footer-menu__link" href="#">Environment Policy </a>
+                  <a class="footer-menu__link" href="#">Privacy </a>
+                </div>
+              </li>
+
+              <li class="footer-menu__item">
+                <div class="footer-menu__header">
+                  <img
+                    class="footer-menu__icon"
+                    src="./images/point.svg"
+                    alt="point"
+                  />
+                  <p class="footer-menu__title">contact sales</p>
+                </div>
+                <div class="footer-menu__links">
+                  <a class="footer-menu__link" href="tel:+61 3 9614 4416"
+                    >PHONE:<span class="footer-menu__relations">
+                      +61 3 9614 4416</span
+                    >
+                  </a>
+                  <a
+                    class="footer-menu__link"
+                    href="mailto:sales@saltgroup.com.au"
+                    >EMAIL:
+                    <span class="footer-menu__relations"
+                      >sales@saltgroup.com.au</span
+                    >
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <img
+          class="footer-logo"
+          src="./images/logo-footer.png"
+          alt="footer logo"
+        />
+      </div>
+
+      <!-- TODO другой шрифт -->
+      <div class="footer-offer">
+        <p class="footer-offer__text">
+          © 2017 salt group
+          <img
+            class="footer-offer__icon"
+            src="./images/point.svg"
+            alt="point"
+          />
+          all rights reserved. Website by dorne creative.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
