@@ -21,6 +21,45 @@ body {
   margin: 0 auto;
 }
 
+.title-light {
+  
+}
+
+.title {
+  
+}
+
+.title-big {
+
+}
+
+.button {
+
+}
+
+.text-light {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.text-lower {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.text-big {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+}
+
 /* HEADER */
 
 .header {
@@ -91,7 +130,6 @@ body {
 .header-slider {
   width: 1000px;
   height: 250px;
-  /* background: transparent; */
   margin: 0 auto;
 }
 
@@ -108,8 +146,6 @@ body {
 }
 
 .carousel-item-block__text {
-  font-weight: 600;
-  font-size: 16px;
   line-height: 30px;
   color: #FFFFFF;
   margin-bottom: 44px;
@@ -182,9 +218,6 @@ body {
 }
 
 .prices-text {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
@@ -263,8 +296,6 @@ body {
 
 .wedo-item__title {
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #7050E5;
@@ -272,9 +303,6 @@ body {
 
 .wedo-item__text {
   max-width: 281px;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 19px;
   letter-spacing: -0.008em;
   color: #878787;
 }
@@ -311,8 +339,6 @@ body {
 }
 
 .product-text {
-  font-weight: 400;
-  font-size: 15px;
   line-height: 21px;
   letter-spacing: -0.02em;
   color: #878787;
