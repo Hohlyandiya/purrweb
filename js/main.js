@@ -4,6 +4,10 @@ const video = document.querySelector(".product-offer__video");
 
 const pointsSlaider = document.querySelectorAll(".carousel-bullet");
 
+const burger = document.querySelector('.header-burger');
+const iconCloseBurger = document.querySelector('.header-menu__icon');
+const burgerMenu = document.querySelector('.header-menu');
+
 // Video
 playTrigger.addEventListener("click", () => {
   video.play();
@@ -27,4 +31,26 @@ pointsSlaider.forEach((point) => {
       }
     });
   });
+});
+
+// Burger
+burger.addEventListener('click', () => {
+  burger.classList.add('hidden');
+  burgerMenu.classList.add('open');
+  document.body.style.overflowY = 'hidden';
+});
+
+iconCloseBurger.addEventListener('click', () => {
+  burger.classList.remove('hidden');
+  burgerMenu.classList.remove('open');
+  document.body.style.overflowY = 'auto';
+});
+
+document.addEventListener('mouseup', (e) => {
+  const container = burgerMenu;
+  if (!container.contains(e.target)) {
+    container.classList.remove('open');
+    burger.classList.remove('hidden');
+    document.body.style.overflowY = 'auto';
+  }
 });

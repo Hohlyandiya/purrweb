@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/slider.css" />
+    <link rel="stylesheet" href="./css/media.css">
   </head>
   <body>
     <header id="header" class="header">
@@ -17,13 +18,25 @@
             <img class="header-logo" src="./images/logo.png" alt="logo" />
           </a>
           <nav class="header-menu">
-            <a href="#" class="header-menu__item">home</a>
-            <a href="#" class="header-menu__item">products</a>
-            <a href="#" class="header-menu__item">services</a>
-            <a href="#" class="header-menu__item">resources</a>
-            <a href="#" class="header-menu__item">about</a>
-            <a href="#" class="header-menu__item">contact us</a>
+            <div class="header-menu__icon">
+              <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px">
+                <path 
+                  d="M 7 4 C 6.744125 4 6.4879687 4.0974687 6.2929688 4.2929688 L 4.2929688 6.2929688 C 3.9019687 
+                  6.6839688 3.9019687 7.3170313 4.2929688 7.7070312 L 11.585938 15 L 4.2929688 22.292969 C 3.9019687 22.683969 3.9019687 23.317031 4.2929688 23.707031 L 6.2929688 25.707031 C 6.6839688 26.098031 7.3170313 26.098031 7.7070312 25.707031 L 15 18.414062 L 22.292969 25.707031 C 22.682969 26.098031 23.317031 26.098031 23.707031 25.707031 L 25.707031 23.707031 C 26.098031 23.316031 26.098031 22.682969 25.707031 22.292969 L 18.414062 15 L 25.707031 7.7070312 C 26.098031 7.3170312 26.098031 6.6829688 25.707031 6.2929688 L 23.707031 4.2929688 C 23.316031 3.9019687 22.682969 3.9019687 22.292969 4.2929688 L 15 11.585938 L 7.7070312 4.2929688 C 7.5115312 4.0974687 7.255875 4 7 4 z" />
+              </svg>
+            </div>
+            <a href="#" class="header-menu__item text-menu-big">home</a>
+            <a href="#" class="header-menu__item text-menu-big">products</a>
+            <a href="#" class="header-menu__item text-menu-big">services</a>
+            <a href="#" class="header-menu__item text-menu-big">resources</a>
+            <a href="#" class="header-menu__item text-menu-big">about</a>
+            <a href="#" class="header-menu__item text-menu-big">contact us</a>
           </nav>
+          <div class="header-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
 
         <div class="header-offer">
@@ -39,7 +52,9 @@
                   hidden=""
                   checked="checked"
                 />
+
                 <div class="carousel-item">
+                  <img class="carousel-item__img_mobile" src="./images/twitter-pc.svg" alt="twitter-pc" />
                   <div class="carousel-item-block">
                     <h3 class="carousel-item-block__title">
                       Device Authentication
@@ -49,12 +64,13 @@
                       security. We have a range of services to improve user
                       authentication. Discover the possibilities with SALT.
                     </p>
-                    <button class="carousel-item-block__btn">
+                    <button class="carousel-item-block__btn button">
                       get started
                     </button>
                   </div>
-                  <img src="./images/twitter-pc.svg" alt="twitter-pc" />
+                  <img class="carousel-item__img" src="./images/twitter-pc.svg" alt="twitter-pc" />
                 </div>
+
                 <input
                   class="carousel-open"
                   type="radio"
@@ -63,7 +79,9 @@
                   aria-hidden="true"
                   hidden=""
                 />
+
                 <div class="carousel-item">
+                  <img class="carousel-item__img_mobile" src="./images/twitter-pc.svg" alt="twitter-pc" />
                   <div class="carousel-item-block">
                     <h3 class="carousel-item-block__title">
                       Device Authentication2
@@ -73,12 +91,13 @@
                       security. We have a range of services to improve user
                       authentication. Discover the possibilities with SALT.
                     </p>
-                    <button class="carousel-item-block__btn">
+                    <button class="carousel-item-block__btn button">
                       get started
                     </button>
                   </div>
-                  <img src="./images/twitter-pc.svg" alt="twitter-pc" />
+                  <img class="carousel-item__img" src="./images/twitter-pc.svg" alt="twitter-pc" />
                 </div>
+
                 <input
                   class="carousel-open"
                   type="radio"
@@ -87,7 +106,9 @@
                   aria-hidden="true"
                   hidden=""
                 />
+
                 <div class="carousel-item">
+                  <img class="carousel-item__img_mobile" src="./images/twitter-pc.svg" alt="twitter-pc" />
                   <div class="carousel-item-block">
                     <h3 class="carousel-item-block__title">
                       Device Authentication3
@@ -97,12 +118,13 @@
                       security. We have a range of services to improve user
                       authentication. Discover the possibilities with SALT.
                     </p>
-                    <button class="carousel-item-block__btn">
+                    <button class="carousel-item-block__btn button">
                       get started
                     </button>
                   </div>
-                  <img src="./images/twitter-pc.svg" alt="twitter-pc" />
+                  <img class="carousel-item__img" src="./images/twitter-pc.svg" alt="twitter-pc" />
                 </div>
+
               </div>
             </div>
           </div>
@@ -131,7 +153,7 @@
           </div>
 
           <div class="header-more">
-            <p class="header-text">find out more</p>
+            <p class="header-text text-menu-big">find out more</p>
             <a href="#wedo">
               <img src="./images/union.svg" alt="union" />
             </a>
@@ -283,7 +305,7 @@
               transactions independent of the delivery channel that initiated
               the request.
             </p>
-            <button class="product-btn">MORE INFO</button>
+            <button class="product-btn button">MORE INFO</button>
           </div>
 
           <div class="product-offer">
@@ -307,6 +329,7 @@
               <h3 class="product-offer-block__title">mSign Connected token</h3>
             </div>
           </div>
+          <button class="product-btn-mobile button">MORE INFO</button>
         </div>
       </div>
     </section>
@@ -315,6 +338,11 @@
       <div class="started-container">
         <div class="started-content">
           <h5 class="started-title">
+            Ready <br />
+            to get started?
+          </h5>
+
+          <h5 class="started-title started-title-mobile">
             Ready <br />
             to get started?
           </h5>
@@ -365,7 +393,7 @@
                 ></textarea>
               </label>
 
-              <button class="form__btn" type="submit">send</button>
+              <button class="form__btn button" type="submit">send</button>
             </div>
           </form>
         </div>
@@ -383,12 +411,12 @@
                 </div>
                 <div class="twitter-header__offer">
                   <h4 class="twitter__title">@saltgroup</h4>
-                  <p class="twitter__text">Twitter feed</p>
+                  <p class="twitter__text text-lower">Twitter feed</p>
                 </div>
               </div>
               <div class="twitter__content">
                 <div class="twitter-item">
-                  <p class="twitter-item__text">
+                  <p class="twitter-item__text text-lower">
                     Experience more with expanded Tweets
                   </p>
                   <a class="twitter-item__link" href="#"
@@ -398,7 +426,7 @@
                 </div>
 
                 <div class="twitter-item">
-                  <p class="twitter-item__text">
+                  <p class="twitter-item__text text-lower">
                     Tailored Trends bring you closer
                   </p>
                   <a class="twitter-item__link" href="#"
@@ -408,53 +436,57 @@
                 </div>
 
                 <div class="twitter-item">
-                  <p class="twitter-item__text">Our new nest.</p>
+                  <span class="twitter-item__block">
+                  <p class="twitter-item__text text-lower">Our new nest.</p>
                   <a class="twitter-item__link" href="#"
                     >http://testing123.com.au</a
                   >
+                </span>
                   <span class="twitter-item__span">11 June 2016</span>
                 </div>
               </div>
             </div>
 
             <ul class="footer-menu">
-              <li class="footer-menu__item">
-                <div class="footer-menu__header">
-                  <img
-                    class="footer-menu__icon"
-                    src="./images/point.svg"
-                    alt="point"
-                  />
-                  <p class="footer-menu__title">Navigation</p>
-                </div>
-                <div class="footer-menu__links">
-                  <a class="footer-menu__link" href="#">Home</a>
-                  <a class="footer-menu__link" href="#">Products </a>
-                  <a class="footer-menu__link" href="#">Services </a>
-                  <a class="footer-menu__link" href="#">Resources </a>
-                  <a class="footer-menu__link" href="#">About </a>
-                  <a class="footer-menu__link" href="#">CONTACT US</a>
-                </div>
-              </li>
+              <div class="footer-menu__item_block">
+                <li class="footer-menu__item">
+                  <div class="footer-menu__header">
+                    <img
+                      class="footer-menu__icon"
+                      src="./images/point.svg"
+                      alt="point"
+                    />
+                    <p class="footer-menu__title">Navigation</p>
+                  </div>
+                  <div class="footer-menu__links">
+                    <a class="footer-menu__link text-menu link-footer" href="#">Home</a>
+                    <a class="footer-menu__link text-menu link-footer" href="#">Products </a>
+                    <a class="footer-menu__link text-menu link-footer" href="#">Services</a>
+                    <a class="footer-menu__link text-menu link-footer" href="#">Resources </a>
+                    <a class="footer-menu__link text-menu link-footer" href="#">About </a>
+                    <a class="footer-menu__link text-menu link-footer" href="#">Contact us</a>
+                  </div>
+                </li>
 
-              <li class="footer-menu__item">
-                <div class="footer-menu__header">
-                  <img
-                    class="footer-menu__icon"
-                    src="./images/point.svg"
-                    alt="point"
-                  />
-                  <p class="footer-menu__title">links</p>
-                </div>
-                <div class="footer-menu__links">
-                  <a class="footer-menu__link" href="#">Disclaimer </a>
-                  <a class="footer-menu__link" href="#">Legal </a>
-                  <a class="footer-menu__link" href="#">Environment Policy </a>
-                  <a class="footer-menu__link" href="#">Privacy </a>
-                </div>
-              </li>
+                <li class="footer-menu__item">
+                  <div class="footer-menu__header">
+                    <img
+                      class="footer-menu__icon"
+                      src="./images/point.svg"
+                      alt="point"
+                    />
+                    <p class="footer-menu__title">links</p>
+                  </div>
+                  <div class="footer-menu__links">
+                    <a class="footer-menu__link text-menu link-footer" href="#">Disclaimer </a>
+                    <a class="footer-menu__link text-menu link-footer" href="#">Legal </a>
+                    <a class="footer-menu__link text-menu link-footer" href="#">Environment Policy </a>
+                    <a class="footer-menu__link text-menu link-footer" href="#">Privacy </a>
+                  </div>
+                </li>
+              </div>
 
-              <li class="footer-menu__item">
+              <li class="footer-menu__item footer-menu__item_last">
                 <div class="footer-menu__header">
                   <img
                     class="footer-menu__icon"
@@ -464,13 +496,13 @@
                   <p class="footer-menu__title">contact sales</p>
                 </div>
                 <div class="footer-menu__links">
-                  <a class="footer-menu__link" href="tel:+61 3 9614 4416"
+                  <a class="footer-menu__link text-menu" href="tel:+61 3 9614 4416"
                     >PHONE:<span class="footer-menu__relations">
                       +61 3 9614 4416</span
                     >
                   </a>
                   <a
-                    class="footer-menu__link"
+                    class="footer-menu__link text-menu"
                     href="mailto:sales@saltgroup.com.au"
                     >EMAIL:
                     <span class="footer-menu__relations"
