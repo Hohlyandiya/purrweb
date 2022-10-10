@@ -1,0 +1,40 @@
+@import url("./stylesheet.css");
+
+html, body {
+  margin: 0;
+  box-sizing: border-box;
+  background: #ffffff;
+  position: relative;
+  z-index: 99;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul ,li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+input, textarea {
+  outline: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input::-moz-placeholder { color: #9E9E9E; opacity: 0.5; }
+input::-webkit-input-placeholder { color: #9E9E9E; opacity: 0.5; }
+
+textarea::-moz-placeholder { color: #9E9E9E; opacity: 0.5; }
+textarea::-webkit-input-placeholder { color: #9E9E9E; opacity: 0.5; }
